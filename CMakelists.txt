@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.1)
+
+project(2_kontrolnaya)
+
+include_directories(${PROJECT_SOURCE_DIR})
+
+set (2_kontrolnaya_SRC  main.cpp autotest.cpp CVectRat.cpp CRat.cpp input.cpp raschet.cpp )
+set (2_kontrolnaya_HDR  Func.h CRat.h CVectRat.h)
+
+add_executable (${PROJECT_NAME} ${2_kontrolnaya_SRC} ${2_kontrolnaya_HDR})
